@@ -25,6 +25,13 @@
                             <h2><a href="">{{ post.title }}</a></h2>
                             <p>{{ post.text|linebreaksbr }}</p>
                         </article>
+                     <article class="post">
+            <time class="date">
+                {{ post.published_date }}
+            </time>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </article>
                     {% endfor %}
                 </div>
             </div>
